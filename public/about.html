@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Omar Abdalla Ahmed Sayed – Web Developer</title>
+  <meta name="description" content="Resume of Omar Abdalla Ahmed Sayed – Web Developer | IT Specialist" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0d10; /* deep slate */
+      --card:#12151a; /* card body */
+      --ink:#e8eef7; /* text */
+      --muted:#a9b4c2; /* secondary */
+      --accent:#4cc9f0; /* cyan */
+      --accent-2:#a78bfa; /* soft violet */
+      --chip:#1a2029;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0}
+    body{
+      background: radial-gradient(1200px 600px at 80% -10%, rgba(76,201,240,.08), transparent 60%),
+                 radial-gradient(1000px 500px at -10% 0%, rgba(167,139,250,.10), transparent 50%),
+                 var(--bg);
+      color:var(--ink);
+      font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      line-height:1.6;
+    }
+    .container{max-width:980px; margin:40px auto; padding:0 20px}
+    header{
+      display:grid; gap:14px; grid-template-columns:1fr; align-items:center;
+      background:linear-gradient(180deg, rgba(76,201,240,.09), rgba(167,139,250,.06));
+      border:1px solid rgba(255,255,255,.06); border-radius:20px; padding:24px; box-shadow:var(--shadow)
+    }
+    .name{font-size:clamp(26px, 4vw, 40px); font-weight:800; letter-spacing:.2px; margin:0}
+    .role{font-weight:600; color:var(--accent); margin-top:-6px}
+    .contact{display:flex; flex-wrap:wrap; gap:10px; font-size:14px; color:var(--muted)}
+    .contact a{color:var(--ink); text-decoration:none; border-bottom:1px dashed rgba(232,238,247,.35)}
+    .contact a:hover{color:var(--accent)}
+
+    section{margin-top:26px}
+    .card{background:var(--card); border:1px solid rgba(255,255,255,.06); border-radius:18px; padding:20px 22px; box-shadow:var(--shadow)}
+    h2{margin:0 0 10px; font-size:18px; letter-spacing:.4px; text-transform:uppercase; color:var(--muted)}
+    .summary{font-size:15.5px; color:#e6edf5}
+
+    .grid{display:grid; gap:14px}
+    @media(min-width:900px){
+      .two{grid-template-columns:1.3fr .9fr}
+      .three{grid-template-columns:repeat(3, 1fr)}
+    }
+
+    /* Chips */
+    .chips{display:flex; flex-wrap:wrap; gap:8px}
+    .chip{background:var(--chip); border:1px solid rgba(255,255,255,.06); padding:7px 10px; border-radius:999px; font-size:13px; white-space:nowrap}
+
+    /* Experience */
+    .job{display:grid; gap:6px; padding:14px 0; border-top:1px dashed rgba(255,255,255,.08)}
+    .job:first-child{border-top:none; padding-top:0}
+    .job h3{margin:0; font-size:16px}
+    .job .meta{font-size:13px; color:var(--muted)}
+    .job ul{margin:6px 0 0 18px}
+    .job li{margin:6px 0}
+
+    /* Lists */
+    .list{display:grid; gap:8px}
+    .list-item{display:flex; justify-content:space-between; gap:8px}
+    .list-item span:last-child{color:var(--muted)}
+
+    /* Print-friendly */
+    @media print{
+      body{background:#fff; color:#000}
+      header,.card{box-shadow:none; background:#fff; border:1px solid #ddd}
+      .chip{background:#f6f6f6; border-color:#e5e5e5}
+      a{color:#000}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1 class="name">Omar Abdalla Ahmed Sayed</h1>
+        <div class="role">Web Developer · IT Specialist</div>
+      </div>
+      <div class="contact">
+        <span>📍 Hadayek El Ahram, Cairo, Giza, EG</span>
+        <span>·</span>
+        <a href="mailto:omarmaghrabi2022@gmail.com">omarmaghrabi2022@gmail.com</a>
+        <span>·</span>
+        <a href="https://www.linkedin.com/in/omar-abdalla-481b4422a" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+        <span>·</span>
+        <span>📱 01116423365</span>
+      </div>
+    </header>
+
+    <section class="grid two">
+      <div class="card">
+        <h2>About Me</h2>
+        <p class="summary">
+          Computer Engineering graduate with hands-on IT and cybersecurity experience, transitioning into web development.
+          Passionate about building secure, user-friendly web apps and automating workflows. Comfortable across the stack and eager to contribute to scalable, maintainable solutions.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Core Skills</h2>
+        <div class="chips">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">Angular (learning)</span>
+          <span class="chip">.NET (learning)</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">Express</span>
+          <span class="chip">REST APIs</span>
+          <span class="chip">Git & GitHub</span>
+          <span class="chip">Docker</span>
+          <span class="chip">Python</span>
+          <span class="chip">SQL</span>
+          <span class="chip">Power BI</span>
+          <span class="chip">Tableau</span>
+          <span class="chip">Linux & Windows Admin</span>
+          <span class="chip">Network Security</span>
+          <span class="chip">ELK / QRadar</span>
+          <span class="chip">Automation (n8n, scripts)</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Experience</h2>
+      <div class="job">
+        <h3>IT Help Desk — Bayan‑tech</h3>
+        <div class="meta">El‑Mohandessin, Giza · Oct 2024 – Present</div>
+        <ul>
+          <li>Delivered onsite & remote L1 support for a multi-branch org; resolved hardware, software, and network issues with high first-contact resolution.</li>
+          <li>Automated repetitive workflows with n8n, PowerShell, and Python; maintained assets, credentials, and configuration records.</li>
+          <li>Supported critical systems: email (Outlook/account mgmt), VoIP (3CX, Zoiper, JustCall), and secure networking (ZeroTier).</li>
+          <li>Conducted user trainings and contributed to the internal knowledge base to reduce recurring requests.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>Defensive Security SOC Intern — We Innovate | ITI Creativa Hub</h3>
+        <div class="meta">Sep 2024 – Nov 2024</div>
+        <ul>
+          <li>Hands-on with SOC analysis, incident response, SOAR, phishing analysis, malware fundamentals, and digital forensics.</li>
+          <li>Used QRadar, ELK Stack, and Python for detection, investigation, and reporting—experience that informs secure web practices.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>Cybersecurity Intern — Depi | AMIT Learning</h3>
+        <div class="meta">Jun 2024 – Oct 2024</div>
+        <ul>
+          <li>Completed Cisco CCNA & CyberOps; practiced ACLs, traffic filtering, and device security.</li>
+          <li>Collaborated on real-world security challenges, strengthening networking fundamentals relevant to backend & DevOps.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid two">
+      <div class="card">
+        <h2>Education</h2>
+        <div class="list">
+          <div class="list-item">
+            <span><strong>B.E., Computer Engineering</strong> — Misr University for Science & Technology</span>
+            <span>GPA 3.14</span>
+          </div>
+          <div class="list-item">
+            <span><strong>High School Certificate</strong> — Al Noor International School</span>
+            <span>GPA 3.8</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Certificates</h2>
+        <div class="list">
+          <div class="list-item"><span>Google Cybersecurity Professional Certificate — Google</span><span>Mar 2024</span></div>
+          <div class="list-item"><span>Cybersecurity (SOC Track) — IBM</span><span>Nov 2023</span></div>
+          <div class="list-item"><span>Cisco CCNA & Cisco CyberOps — Cisco</span><span>2023–2024</span></div>
+          <div class="list-item"><span>Cyber Security 101 — Security Meter Academy</span><span>Apr 2022</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid two">
+      <div class="card">
+        <h2>Languages</h2>
+        <div class="chips">
+          <span class="chip">Arabic — Native</span>
+          <span class="chip">English — Fluent</span>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Highlights</h2>
+        <div class="chips">
+          <span class="chip">Problem Solver</span>
+          <span class="chip">Work Under Pressure</span>
+          <span class="chip">Knowledge Sharing</span>
+          <span class="chip">Security‑minded Development</span>
+          <span class="chip">Automation‑first Mindset</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional Projects section for your portfolio; add items as you build apps.
+    <section class="card">
+      <h2>Projects</h2>
+      <div class="job">
+        <h3>Project Name — Tech Stack</h3>
+        <div class="meta">Short one‑line impact (e.g., users, performance, or what you learned)</div>
+        <ul>
+          <li>Key feature or challenge solved.</li>
+          <li>Link: <a href="#" target="_blank" rel="noreferrer noopener">GitHub</a> · <a href="#" target="_blank" rel="noreferrer noopener">Live Demo</a></li>
+        </ul>
+      </div>
+    </section> -->
+
+    <footer style="text-align:center; color:var(--muted); font-size:12px; padding:20px 0 10px;">
+      © <span id="y"></sp

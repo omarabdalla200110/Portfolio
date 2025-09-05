@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — Omar Abdalla</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0d10; --card:#12151a; --ink:#e8eef7; --muted:#a9b4c2; --accent:#4cc9f0;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font-family:Inter,system-ui,Arial; background:var(--bg); color:var(--ink); padding:36px}
+    .wrap{max-width:900px; margin:0 auto}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:14px; padding:28px; border:1px solid rgba(255,255,255,0.04)}
+    h1{margin:0 0 6px; font-size:28px}
+    p{margin:8px 0; color:var(--muted)}
+    address{font-style:normal; color:var(--muted)}
+    .contact-grid{display:grid; gap:18px; margin-top:18px}
+    .info{display:flex; flex-direction:column; gap:4px}
+    .info b{color:var(--ink)}
+    @media(min-width:700px){
+      .contact-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Contact Me</h1>
+      <div class="contact-grid">
+        <div class="info">
+          <p><strong>Tel:</strong> 01116423365</p>
+          <p><strong>Email:</strong> <a href="mailto:omarmaghrabi2022@gmail.com" style="color:var(--accent); text-decoration:none">omarmaghrabi2022@gmail.com</a></p>
+          <div>
+            <p><strong>Address:</strong></p>
+            <address>
+              Hadayek El Ahram<br>
+              Cairo, Giza, Egypt
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
